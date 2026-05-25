@@ -1,0 +1,22 @@
+{
+    "AuditTimestamp": "2026-05-25T12:00:00Z",
+    "ConfiguredDaysThreshold": 90,
+    "Findings": {
+        "arn:aws:iam::123456789012:role/FinTechAppProcessingRole": {
+            "PrincipalType": "IAM_Role",
+            "UnusedPermissionsCount": 2,
+            "RevocationTargets": [
+                {
+                    "ServiceName": "lambda",
+                    "LastUsedDaysAgo": 112,
+                    "Status": "REVOKE_RECOMMENDED"
+                },
+                {
+                    "ServiceName": "dynamodb",
+                    "LastUsedDaysAgo": "NEVER",
+                    "Status": "NEVER_USED_REVOKE_IMMEDIATELY"
+                }
+            ]
+        }
+    }
+}
