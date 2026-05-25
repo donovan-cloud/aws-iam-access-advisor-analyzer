@@ -1,5 +1,3 @@
-### 2. `iam_advisor_auditor.py`
-```python
 #!/usr/bin/env python3
 """
 AWS IAM Access Advisor Analyzer
